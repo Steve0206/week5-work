@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11563,10 +11564,240 @@ fieldset:disabled .btn {
   }
 }
 
-.index__h1 {
+body {
+  font-family: 'Lato','Roboto Mono', sans-serif;
+  line-height: 1.5;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.gray-600 {
+  color: #6c757d;
+}
+
+.bg-gray200 {
+  background: #e9ecef;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.nav {
+  position: fixed;
+  width: 296px;
+  min-height: 100vh;
+}
+
+.nav h1 a, .nav .h1 a {
+  display: block;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/week5/logo-ANSWER.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+main, header {
+  margin-left: 296px;
+}
+
+.nav-link {
+  margin: 12px 0;
+  padding: 4px 32px;
+  color: #212529;
+  border-left: 4px solid transparent;
+}
+
+.nav-link:hover {
+  background-color: #6c757d;
+  color: #212529;
+}
+
+.menu-active {
+  color: #198754;
+  border-left: 4px solid #198754;
+}
+
+.user {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+}
+
+.pic {
+  width: 40px;
+  height: 40px;
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #212529;
+}
+
+.link:hover {
   color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+}
+
+.list-group {
+  width: 33%;
+}
+
+.list-group .active {
+  color: #212529;
+  background: #f8f9fa;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.reply {
+  width: 66%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+.reply-window {
+  position: absolute;
+  bottom: -450px;
+  border: 1px solid #adb5bd;
+  width: 100%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.window-list {
+  background: #e9ecef;
+}
+
+.window-btn:hover {
+  color: #212529;
+  background-color: #ced4da;
+}
+
+.text {
+  display: block;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+  height: 60vh;
+}
+
+.text-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.reply-active {
+  bottom: 1px;
+}
+
+.expand_more {
+  display: none;
+}
+
+.expand_less {
+  display: inline-block;
+}
+
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: #198754;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #198754;
+}
+
+.page-link-hover {
+  color: #fff;
+  background-color: #198754;
+  border: 1px solid #198754;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #000;
+}
+
+.form-control::-moz-placeholder {
+  color: #000;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #000;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #000;
+}
+
+.form-control::placeholder {
+  color: #000;
+}
+
+.form-control[readonly] {
+  background-color: #f8f9fa;
+  opacity: 1;
+}
+
+.form-check-input:checked {
+  color: #fff;
+  background-color: #198754;
 }
 
 /*# sourceMappingURL=all.css.map */
