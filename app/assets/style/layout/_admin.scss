@@ -1,0 +1,49 @@
+
+.expand_more {
+    display: none;
+}
+
+.expand_less {
+    display: inline-block;
+}
+
+.collapsed .expand_more {
+    display: inline-block;
+}
+
+.collapsed .expand_less {
+    display: none;
+}
+
+//page
+.page-link {
+    position: relative;
+    display: block;
+    color: #198754;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #198754;
+    &-hover{
+        color: #fff;
+        background-color: #198754;
+        border: 1px solid #198754;
+    }
+}
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+.form-control::placeholder{
+    color: #000;
+}
+//readonly
+.form-control[readonly] {
+    background-color: $gray-100;
+    opacity: 1;
+}
+//checked
+.form-check-input:checked {
+    color: #fff;
+    background-color: #198754;
+}

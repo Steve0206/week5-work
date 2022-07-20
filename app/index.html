@@ -1,58 +1,286 @@
 ---
-title: Boostrap Index
+title: Assignment
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<header class="d-flex align-items-center justify-content-between mb-5 p-32">
+  <div class="d-flex">
+    <h2 class="fs-4 fw-bold me-5">Assignment</h2>
+    <a href="#" class="d-flex align-items-center fw-bold link-dark link">
+      All Courses
+      <span class="material-icons link-primary ms-2"> expand_more </span>
+    </a>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
+  <div class="d-flex">
+    <a href="#" class="icon rounded-circle me-4">
+      <span class="material-icons"> search </span>
+    </a>
+    <a href="#" class="icon rounded-circle">
+      <span class="material-icons"> notifications_active </span>
+    </a>
   </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
+</header>
+<main class="p-32">
+  <div class="d-flex justify-content-between mb-2">
+    <a href="#" class="d-flex align-items-center fw-bold link-dark link">
+      All (4)
+      <span class="material-icons link-primary ms-3"> expand_more </span>
+    </a>
+    <a href="#" class="fs-14 text-secondary icon">2 comments</a>
   </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="d-flex justify-content-between pb-4">
+
+    <!--目錄-->
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action p-12 active" id="list-home-list" data-bs-toggle="list" href="#list-home"
+        role="tab" aria-controls="list-home">
+        <p class="d-flex justify-content-between fs-12">
+          Chapter Assignment 2
+          <span>4 hrs ago</span>
+        </p>
+        <h3 class="d-flex justify-content-between align-items-center fs-6 fw-bold">
+          Please check this file…
+          <span class="gray-600 fs-12 fw-normal">Emily Wang</span>
+        </h3>
+      </a>
+      <a class="list-group-item list-group-item-action p-12" id="list-profile-list" data-bs-toggle="list" href="#list-profile"
+        role="tab" aria-controls="list-profile">
+        <p class="d-flex justify-content-between fs-12">
+          Chapter Assignment 1
+          <span>12 hrs ago</span>
+        </p>
+        <h3 class="d-flex justify-content-between align-items-center fs-6 fw-bold">
+          My Homework
+          <span class="gray-600 fs-12 fw-normal">David Xu</span>
+        </h3>
+      </a>
+      <a class="list-group-item list-group-item-action p-12" id="list-messages-list" data-bs-toggle="list" href="#list-messages"
+        role="tab" aria-controls="list-messages">
+        <p class="d-flex justify-content-between fs-12">Final Assignment
+          <span>18 hrs ago</span>
+        </p>
+        <h3 class="d-flex justify-content-between align-items-center fs-6 fw-bold">
+          Have a problem with this…
+          <span class="gray-600 fs-12 fw-normal">Tony Wei</span>
+        </h3>
+      </a>
+      <a class="list-group-item list-group-item-action p-12" id="list-settings-list" data-bs-toggle="list" href="#list-settings"
+        role="tab" aria-controls="list-settings">
+        <p class="d-flex justify-content-between fs-12">Final Assignment
+          <span>19 hrs ago</span>
+        </p>
+        <h3 class="d-flex justify-content-between align-items-center fs-6 fw-bold">Did I do it right?
+          <span class="gray-600 fs-12 fw-normal">Christina Lin</span>
+        </h3>
+      </a>
+    </div>
+
+    <!--content-->
+    <div class="d-flex flex-column reply">
+      <div class="tab-content" id="nav-tabContent">
+
+        <!--第一個 content-->
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center p-12 px-3">
+              <div>
+                <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                <h3 class="fs-6 fw-bold">Please check this file for me, thanks!</h3>
+              </div>
+              <a href="#" class="icon">
+                <span class="material-icons"> more_vert </span>
+              </a>
+            </div>
+            <ul class="card-body">
+              <li class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid rounded-circle pic" src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80" alt="學員照片">
+                </div>
+                <div class="flex-grow-1 ms-3 pb-3 border-bottom">
+                  <h4 class="fs-6 fw-bold mb-1">Emily Wang</h4>
+                  <span class="d-block fs-12 gray-600 mb-3">10:38 AM (4 hours ago)</span>
+                  <p class="mb-3">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the
+                    height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin. What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+              </li>
+              <li class="d-flex pb-3">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid rounded-circle pic"
+                    src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="user頭像">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="fs-6 fw-bold mb-1">Andy Chen</h4>
+                    <div class="d-flex">
+                      <a href="#" class="icon me-4">
+                        <span class="material-icons">
+                          star_outline
+                        </span>
+                      </a>
+                      <a href="#" class="icon">
+                        <span class="material-icons">
+                          mode_edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="d-block fs-12 gray-600 mb-3">10:38 AM (4 hours ago)</span>
+                  <p class="mb-3">
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+                    There is space below that line for the descenders you find on letters like g, j, p and q.
+                    <br><br>
+                    You can:
+                    <br>
+                    <ul class="disc">
+                      <li>
+                        adjust the <code class="text-success bg-light px-1 rounded-1">vertical-align</code> &emsp;
+                      of the image to position it elsewhere (e.g. the middle &emsp; ) or 
+                    </li>
+                      <li>
+                        change the <code class="text-success bg-light px-1 rounded-1">display</code> &ensp; so it isn’t inline.
+                      </li>
+                    </ul>
+
+                  </p>
+            </ul>
+          </div>
+        </div>
+
+        <!--第二個 content-->
+        <div class="tab-pane fade show" id="list-profile" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center p-12 px-3">
+              <div>
+                <p class="fs-12">Chapter Assignment 1 / HTML&CSS</p>
+                <h3 class="fs-6 fw-bold">My Homework</h3>
+              </div>
+              <a href="#" class="icon">
+                <span class="material-icons"> more_vert </span>
+              </a>
+            </div>
+            <ul class="card-body">
+              <li class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid rounded-circle pic"
+                    src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80"
+                    alt="學員照片">
+                </div>
+                <div class="flex-grow-1 ms-3 pb-3 border-bottom">
+                  <h4 class="fs-6 fw-bold mb-1">Emily Wang</h4>
+                  <span class="d-block fs-12 gray-600 mb-3">10:38 AM (4 hours ago)</span>
+                  <p class="mb-3">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following
+                    code the
+                    height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the
+                    <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it
+                    doesn’t seems to be a
+                    padding/margin. What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+              </li>
+              <li class="d-flex pb-3">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid rounded-circle pic"
+                    src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+                    alt="user頭像">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4 class="fs-6 fw-bold mb-1">Andy Chen</h4>
+                  <span class="d-block fs-12 gray-600 mb-3">10:38 AM (4 hours ago)</span>
+                  <p class="mb-3">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following
+                    code
+                    the
+                    height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the
+                    <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it
+                    doesn’t seems
+                    to be a
+                    padding/margin. What is the gap or extra space below image?
+                  </p>
+            </ul>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...3</div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...4</div>
       </div>
-      <div class="modal-body">
-        ...
+
+
+
+      <!--按鈕-->
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <a href="#" class="icon me-3"><span class="material-icons">
+            chevron_left
+          </span>
+          </a>
+          <a href="#" class="icon">
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </a>
+        </div>
+
+        <div class="d-flex">
+          <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+          <button type="button" class="btn btn-success me-3 reply-check">Reply</button>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      
+      <div class="reply-window">
+        <ul class="window-list list-unstyled  d-flex flex-wrap py-3  mb-0 px-4 border-bottom border-gray gap-3">
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-3">Body Text<span class="material-icons ms-2">
+                arrow_drop_down
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                format_bold
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                format_italic
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                <span class="material-icons">
+                  format_list_bulleted
+                </span>
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                <span class="material-icons">
+                  format_list_numbered
+                </span>
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                <span class="material-icons">
+                  insert_photo
+                </span>
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                <span class="material-icons">
+                  insert_link
+                </span>
+              </span></a></li>
+          <li><a href="#" class="window-btn d-flex align-items-center p-2 rounded-circle"><span class="material-icons">
+                <span class="material-icons">
+                  code
+                </span>
+              </span></a></li>
+      
+        </ul>
+        <textarea class="text" placeholder="Reply an answer…"></textarea>
+        <div class="text-btn d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-success me-3 reply-cancel">Cancel</button>
+          <button type="button" class="btn btn-success">Reply</button>
+        </div>
       </div>
     </div>
+
   </div>
-</div>
+</main>

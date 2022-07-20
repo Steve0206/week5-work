@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lato','Roboto Mono', sans-serif;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: $dark;
+}
+
+.p-32 {
+    padding: 32px;
+}
+.p-12{
+    padding: 12px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+
+.gray-600{
+    color: $gray-600;
+}
+.bg-gray200{
+    background: $gray-200;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-64{
+    margin-bottom: 64px;
+}

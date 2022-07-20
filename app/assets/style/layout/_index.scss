@@ -1,5 +1,58 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.list-group{
+  width: 33%;
+  .active{
+    color: $dark;
+    background: $light;
+    border-color: rgba(0, 0, 0, 0.125);
+  }
+}
+
+.reply{
+  width: 66%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+
+.disc{
+  list-style-type: disc;
+}
+
+.reply-window{
+  position: absolute;
+  bottom: -450px;
+  border: 1px solid $gray-500;
+  width: 100%;
+  transition: .5s;
+}
+
+
+.window{
+  &-list{
+    background: $gray-200;
+  }
+  &-btn {
+    &:hover {
+      color: $dark;
+      background-color: $gray-400;
+    }
+  }
+}
+
+.text{
+  display: block;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+  height: 60vh;
+}
+.text-btn{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.reply-active{
+  bottom:1px;
 }
