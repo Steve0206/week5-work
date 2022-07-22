@@ -11730,7 +11730,7 @@ main, header {
 }
 
 .reply-active {
-  bottom: 1px;
+  bottom: -0px;
 }
 
 .expand_more {
