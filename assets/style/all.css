@@ -11697,7 +11697,7 @@ main, header {
 
 .reply-window {
   position: absolute;
-  bottom: -450px;
+  bottom: -500px;
   border: 1px solid #adb5bd;
   width: 100%;
   -webkit-transition: .5s;
